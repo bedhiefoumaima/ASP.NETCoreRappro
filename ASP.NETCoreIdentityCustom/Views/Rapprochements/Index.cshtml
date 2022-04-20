@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Rappro.Data.Rapprochement>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DateRapp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FichierRapp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumActifNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumPassifNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateRapp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FichierRapp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumActifNavigation.NumActif)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumPassifNavigation.NumPassif)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdNavigation.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.NumRapp">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.NumRapp">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.NumRapp">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
