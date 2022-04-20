@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_GRBuwJhsEeyPYtD7l3LUnA" name="chorus" dataPackage="_GRBuwZhsEeyPYtD7l3LUnA" Server="Localhost 127.0.0.1" FilePath="C:/Users/obedhief/Desktop/rapprochement/rd_rappro_ap_chorus.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_GRBuwZhsEeyPYtD7l3LUnA" name="default" dataManager="_GRBuwJhsEeyPYtD7l3LUnA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_GRBuwphsEeyPYtD7l3LUnA" id="_7xXR8JhrEeyPYtD7l3LUnA" label="chorus">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuw5hsEeyPYtD7l3LUnA" label="Date_de_valorisation" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuxJhsEeyPYtD7l3LUnA" label="Alias_portefeuille" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuxZhsEeyPYtD7l3LUnA" label="Code_valeur" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuxphsEeyPYtD7l3LUnA" label="Place_de_cotation_valeur" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBux5hsEeyPYtD7l3LUnA" label="Quantit__stock" length="-1" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuyJhsEeyPYtD7l3LUnA" label="Valeur_boursi_re_R_f_" length="-1" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuyZhsEeyPYtD7l3LUnA" label="Gestionnaire" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuyphsEeyPYtD7l3LUnA" label="Libell__groupe_de_portefeuille" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuy5hsEeyPYtD7l3LUnA" label="Libell__long_du_portefeuille" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuzJhsEeyPYtD7l3LUnA" label="Libell__soci_t__de_gestion" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GRBuzZhsEeyPYtD7l3LUnA" label="Libell__long_gestionnaire" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

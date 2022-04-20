@@ -1,0 +1,71 @@
+﻿@using ASP.NETCoreIdentityCustom.Core.ViewModels
+@model IEnumerable<DonneeActif>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<form asp-controller ="DonnesActif" asp-action =index method="post" enctype = "multipart/form-data" >
+    
+    <input type = "file" name ="file" /> 
+    <hr /> 
+    <button type="submit">Upload</button>
+</form>
+
+@if (Model.Count()>0)
+{
+    <hr />
+    <table cellpadding = "0"  cellspacing ="0" border = "1">
+       @* <tr>
+            <td>DateValorisation</td>
+            <td>AliasPortefeuille</td>
+            <td>CodeValeur</td>
+            <td>PlaceCotationValeur</td>
+            <td>QuantitStock</td>
+            <td>ValeurBoursi</td>
+            <td>Gestionnaire</td>
+            <td>LibellGroupePortefeuille</td>
+            <td>LibellLongPortefeuille</td>
+            <td>LibellSteGstion</td>
+            <td>LibellLongGstion</td>
+        </tr>*@
+         <tr>
+            <td>UserName</td>
+            <td>EmailID</td>
+            <td>MobileNumber</td>
+            <td>Age</td>
+            <td>Salary</td>
+            <td>Gender</td>
+           
+        </tr>
+        @foreach (DonneeActif donneeActif in Model)
+        {
+            @*
+                <td>@donneeActif.DateValorisation</td>
+                <td>@donneeActif.AliasPortefeuille</td>
+                <td>@donneeActif.CodeValeur</td>
+                <td>@donneeActif.PlaceCotationValeur</td>
+                <td>@donneeActif.QuantitStock</td>
+                 <td>@donneeActif.ValeurBoursi</td>
+                  <td>@donneeActif.Gestionnaire</td>
+                  <td>@donneeActif.LibellGroupePortefeuille</td>
+                 <td>@donneeActif.LibellLongPortefeuille</td>
+                 <td>@donneeActif.LibellSteGstion</td>
+                 <td>@donneeActif.LibellLongGstion</td>*@
+                 <tr>
+                 <td>@donneeActif.UserName</td>
+                <td>@donneeActif.EmailID</td>
+                <td>@donneeActif.MobileNumber</td>
+                <td>@donneeActif.Age</td>
+                <td>@donneeActif.Salary</td>
+                 <td>@donneeActif.Gender</td>
+               
+                 
+
+            </tr>
+        }
+    </table>
+}
+
